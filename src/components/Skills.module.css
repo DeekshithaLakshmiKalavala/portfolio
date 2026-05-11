@@ -1,0 +1,29 @@
+.section { max-width: 1160px; margin: 0 auto; padding: 5.5rem 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px,1fr)); gap: 1.2rem; }
+.card {
+  background: var(--glass); border: 1px solid var(--line2);
+  border-radius: var(--radius); padding: 1.4rem; transition: all .25s; height: 100%;
+}
+.card:hover { background: var(--glass2); border-color: rgba(220,60,60,.35); transform: translateY(-3px); }
+.icon { font-size: 1.35rem; margin-bottom: .75rem; display: block; }
+.card h4 { font-size: .86rem; font-weight: 700; margin-bottom: .55rem; color: var(--fg); }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tag {
+  font-size: .7rem; font-weight: 600; padding: 3px 9px; border-radius: 50px;
+  background: rgba(255,255,255,.05); border: 1px solid var(--line2); color: var(--fg2);
+}
+.primary { background: rgba(220,60,60,.14); border-color: rgba(220,60,60,.38); color: var(--fg); }
+
+/* bars */
+.barsWrap {
+  margin-top: 1.4rem; background: var(--glass); border: 1px solid var(--line2);
+  border-radius: var(--radius); padding: 1.5rem;
+}
+.barsWrap h4 { font-size: .88rem; font-weight: 700; margin-bottom: 1rem; text-align: center; color: var(--fg); }
+.barList { display: flex; flex-direction: column; gap: 11px; }
+.barRow {}
+.barTop { display: flex; justify-content: space-between; font-size: .8rem; font-weight: 600; margin-bottom: 5px; color: var(--fg); }
+.barPct { color: var(--fg3); transition: all .9s ease; }
+.barTrack { height: 8px; border-radius: 50px; background: rgba(255,255,255,.05); border: 1px solid var(--line); overflow: hidden; }
+.barFill { height: 100%; border-radius: 50px; background: linear-gradient(90deg,var(--a1),var(--a2)); transition: width .9s ease; }
+@media (max-width: 900px) { .section { padding: 4rem 1.25rem; } }

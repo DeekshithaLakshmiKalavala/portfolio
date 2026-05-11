@@ -1,0 +1,25 @@
+.section { max-width: 1160px; margin: 0 auto; padding: 5.5rem 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(330px,1fr)); gap: 1.4rem; }
+.card {
+  background: var(--glass); border: 1px solid var(--line2);
+  border-radius: var(--radius); padding: 1.75rem; transition: all .25s;
+}
+.card:hover { background: var(--glass2); border-color: rgba(220,60,60,.35); transform: translateY(-3px); box-shadow: var(--shadow); }
+.top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.1rem; }
+.badge {
+  font-size: .68rem; font-weight: 700; padding: 4px 11px; border-radius: 50px;
+  background: rgba(220,60,60,.14); border: 1px solid rgba(220,60,60,.28); color: var(--a1); letter-spacing: .04em;
+}
+.card h3 { font-size: .97rem; font-weight: 700; color: var(--fg); margin-bottom: 3px; line-height: 1.35; }
+.school {
+  font-size: .8rem; font-weight: 700; margin-bottom: .6rem;
+  background: linear-gradient(135deg,var(--a1),var(--a2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.meta { font-size: .8rem; color: var(--fg2); margin-bottom: .9rem; }
+.courses { display: flex; flex-wrap: wrap; gap: 5px; }
+.course {
+  font-size: .69rem; padding: 3px 9px; border-radius: 50px;
+  background: rgba(255,255,255,.05); color: var(--fg2); border: 1px solid var(--line2);
+}
+@media (max-width: 900px) { .section { padding: 4rem 1.25rem; } }

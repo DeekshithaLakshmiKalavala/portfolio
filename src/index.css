@@ -1,0 +1,48 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --a1: #dc3c3c;
+  --a2: #ff7832;
+  --bg:    #0a0808;
+  --bg2:   #130c0c;
+  --fg:    #f5eeee;
+  --fg2:   rgba(245,238,238,0.70);
+  --fg3:   rgba(245,238,238,0.38);
+  --line:  rgba(255,255,255,0.08);
+  --line2: rgba(255,255,255,0.14);
+  --glass: rgba(255,255,255,0.045);
+  --glass2:rgba(255,255,255,0.085);
+  --shadow:0 20px 60px rgba(0,0,0,0.50);
+  --radius:18px;
+  --nav-h: 64px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body.light {
+  --bg:    #fdf6f6;
+  --bg2:   #ffffff;
+  --fg:    #1a0a0a;
+  --fg2:   rgba(26,10,10,0.68);
+  --fg3:   rgba(26,10,10,0.38);
+  --line:  rgba(0,0,0,0.08);
+  --line2: rgba(0,0,0,0.13);
+  --glass: rgba(255,255,255,0.78);
+  --glass2:rgba(255,255,255,0.95);
+  --shadow:0 20px 60px rgba(0,0,0,0.09);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+a { text-decoration: none; color: inherit; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: linear-gradient(var(--a1), var(--a2)); border-radius: 3px; }

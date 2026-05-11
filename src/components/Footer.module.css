@@ -1,0 +1,9 @@
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem 1.5rem; text-align: center;
+  font-size: .78rem; color: var(--fg3);
+  max-width: 1160px; margin: 0 auto;
+}
+.links { display: flex; justify-content: center; gap: 1rem; margin-bottom: .75rem; }
+.links a { color: var(--fg3); font-size: .78rem; font-weight: 600; transition: color .18s; }
+.links a:hover { color: var(--a1); }

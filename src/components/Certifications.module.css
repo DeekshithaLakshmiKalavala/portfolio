@@ -1,0 +1,16 @@
+.section { max-width: 1160px; margin: 0 auto; padding: 5.5rem 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 1.1rem; }
+.card {
+  background: var(--glass); border: 1px solid var(--line2);
+  border-radius: var(--radius); padding: 1.35rem;
+  display: flex; gap: .9rem; align-items: flex-start; transition: all .25s;
+}
+.card:hover { background: var(--glass2); border-color: rgba(220,60,60,.35); transform: translateY(-2px); }
+.ico {
+  width: 42px; height: 42px; border-radius: 11px; flex-shrink: 0;
+  background: rgba(220,60,60,.14); border: 1px solid rgba(220,60,60,.28);
+  display: flex; align-items: center; justify-content: center; font-size: 1.15rem;
+}
+.card h4 { font-size: .86rem; font-weight: 700; color: var(--fg); margin-bottom: 3px; }
+.card p  { font-size: .74rem; color: var(--fg3); font-weight: 500; }
+@media (max-width: 900px) { .section { padding: 4rem 1.25rem; } }
