@@ -11,8 +11,7 @@ export const META = {
   location: "Cincinnati, Ohio, USA",
   github: "https://github.com/DeekshithaLakshmiKalavala",
   linkedin: "https://www.linkedin.com/in/kalavala-deekshitha/",
-  resume: "/Resume.pdf",
-};
+  resume: process.env.PUBLIC_URL + "/Resume.pdf",
 
 export const STATS = [
   { num: "AZ",  label: "Azure Certified" },

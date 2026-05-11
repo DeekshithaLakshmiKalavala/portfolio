@@ -1,7 +1,7 @@
 {
   "name": "deekshitha-portfolio",
   "version": "1.0.0",
-  "homepage": "https://DeekshithaLakshmiKalavala.github.io/portfolio-react",
+  "homepage": "https://DeekshithaLakshmiKalavala.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

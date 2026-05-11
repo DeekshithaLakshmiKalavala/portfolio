@@ -29,7 +29,7 @@ export default function HomePage() {
         <div className={styles.profileWrapper}>
           {!imgError ? (
             <img
-              src="/profile.jpeg"
+              src={process.env.PUBLIC_URL + "/profile.jpg"}
               alt={META.shortName}
               className={styles.profileImg}
               onError={() => setImgError(true)}
