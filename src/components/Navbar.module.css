@@ -1,5 +1,4 @@
 .header {
-  .header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   background: rgba(30, 8, 8, 0.85);
   backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
