@@ -66,7 +66,7 @@ export default function Contact() {
               Feel free to reach out — I'd love to connect and explore how we can collaborate.
             </p>
             {[
-              { Icon: MailIcon,   label: 'Email',    val: META.email },
+              { Icon: MailIcon,   label: 'Email',    val: 'kalavaladeekshitha18@gmail.com' },
               { Icon: PinIcon,    label: 'Location', val: META.location },
               { Icon: LinkedIcon, label: 'LinkedIn', val: 'kalavala-deekshitha' },
             ].map(({ Icon, label, val }) => (
